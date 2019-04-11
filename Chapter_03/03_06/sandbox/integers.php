@@ -36,6 +36,7 @@
     Decrement: <?php $var2--; echo $var2; ?><br />
     <br />
     <?php
+      // There is a difference between the number one and the string one ( 1 vs "1") but PHP will change it to an integer to complete an operation
       // PHP will convert a string to an integer
       // but it is sloppy programming
       echo 1 + "2 houses";
