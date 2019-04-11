@@ -7,6 +7,27 @@
   </head>
   <body>
   <?php
+
+//Variables -declared using bling sign ($)
+
+
+//these are different variables
+  $item; 
+  $Item;
+
+//camelCase
+  $myVar; 
+
+//kebob (not recommended bc the hyphen looks like a minus sinn)
+  $kebab-variable;
+
+//one underscore (used in PHP stay away in general use.)
+  $_phpvar; 
+
+//Double underscores (hard to tell how many underscores were used or their significance)
+  $__bookPage;  
+  
+
   
   $var1 = 10;
   echo $var1;
