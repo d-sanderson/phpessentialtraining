@@ -4,12 +4,15 @@
 <html lang="en">
   <head>
     <title>Constants</title>
+    <!-- Use Constants Sparingly -->
   </head>
   <body>
 
     <?php
       $max_width = 980;
-      
+      // define allows you to assign a constant, which is a value that never changes 
+      //PHP convention: constants are in all caps
+      //Use quotes in first arg if the constant hasnt been declared
       define("MAX_WIDTH", 980);
       echo MAX_WIDTH;
     ?>
