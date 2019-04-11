@@ -12,18 +12,26 @@
     ?>
     Basic Math: <?php echo ((1 + 2 + $var1) * $var2) / 2 - 5; ?><br />
     <br />
+    <!-- returns absolute value of integer i.e -300 returns 300 -->
     Absolute value:   <?php echo abs(0 - 300);   ?><br />
+    <!-- 2^8 -->
     Exponential:       <?php echo pow(2,8);       ?><br />
+    <!-- returns square root of the number -->
     Square root:       <?php echo sqrt(100);     ?><br />
+    <!-- returns division remainder -->
     Modulo:           <?php echo fmod(20,7);     ?><br />
+    <!-- returns a random number -->
     Random:           <?php echo rand();         ?><br />
+    <!-- returns random number within a range -->
     Random (min,max): <?php echo rand(1,10);     ?><br />
     <br />
-    += : <?php $var2 += 4; echo $var2; ?><br />
-    -= : <?php $var2 -= 4; echo $var2; ?><br />
-    *= : <?php $var2 *= 3; echo $var2; ?><br />
-    /= : <?php $var2 /= 4; echo $var2; ?><br />
+    <!--  -->
+    <?php echo $var2 ?> += : <?php $var2 += 4; echo $var2; ?><br />
+    <?php echo $var2 ?> -= : <?php $var2 -= 4; echo $var2; ?><br />
+    <?php echo $var2 ?> *= : <?php $var2 *= 3; echo $var2; ?><br />
+    <?php echo $var2 ?> /= : <?php $var2 /= 4; echo $var2; ?><br />
     <br />
+    <!-- handy ways to increment or decrement by 1 borrowed from C -->
     Increment: <?php $var2++; echo $var2; ?><br />
     Decrement: <?php $var2--; echo $var2; ?><br />
     <br />
