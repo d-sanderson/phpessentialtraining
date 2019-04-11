@@ -3,28 +3,42 @@
 
 <html lang="en">
   <head>
-    <title>Arrays</title>
+    <title> The Power of Arrays</title>
   </head>
   <body>
+
+   <!-- The POWER OF ARRAYS is that a set of info can be accessed through one variable i.e a set of emails -->
     <?php
     
+    // an array is an ordered collection of data types or objects
       $numbers = array(4,8,15,16,23,42);
-      echo $numbers[0];
+    // returns the first index in the $numbers array (returns 4)  
+      echo "{$numbers[0]}<br/>";
+      
+      echo $numbers[1];
     ?>
     <br />
     
     <?php $mixed = array(6, "fox", "dog", array("x", "y", "z")); ?>
-    <?php echo $mixed[2]; ?><br />
+    <!-- returns dog -->
+    <?php echo $mixed[2]; ?><br /> 
+    <!-- returns an array as a string PHP doesn't like this and will show an ERROR -->
     <?php //echo $mixed[3]; ?><br />
     <?php //echo $mixed ?><br />
-    
+
+    <!-- bracket notation allows you to access nested arrays returns y -->
     <?php echo $mixed[3][1]; ?><br />
     
     <?php $mixed[2] = "cat"; ?>
     <?php $mixed[4] = "mouse"; ?>
+    <!-- if you dont know how long the array is you can use empty brackets to add values to the end of an array -->
     <?php $mixed[] = "horse"; ?>
+
+   
     
+    <!-- pre tags will indent the array for you so it is easier to read -->
     <pre>
+    <!-- print_r lets you see whats inside and array - this is useful for debugging -->
     <?php echo print_r($mixed); ?>
     </pre>
     
