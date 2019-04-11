@@ -8,6 +8,7 @@
   <body>
 
     <?php
+    // Booleans are case-insensitive in PHP you can use True, true, False, or false.
       $result1 = true;
       $result2 = false;
     ?>
@@ -20,7 +21,14 @@
     <?php
       $number = 3.14;
       if( is_float($number) ) {
-        echo "It is a float.";
+        echo "It is a float. <br/>";
+      } 
+      $integer = 5;
+      if ( is_int($integer)) {
+        echo "It is an int";
+      }
+      else {
+        echo 'Nope, not an integer';
       }
     
     ?>
