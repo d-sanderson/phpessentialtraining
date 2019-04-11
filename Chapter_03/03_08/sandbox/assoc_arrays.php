@@ -18,13 +18,15 @@
     <?php echo "<br/>
     {$myAssocArray["dogs"]["oldest_dog"]}
     <br/>"; ?> 
+    <?php echo $myAssocArray["first_name"] . " has " .  count($myAssocArray["dogs"]) . " dogs and their names are " . $myAssocArray["dogs"]["oldest_dog"] . " and " . "{$myAssocArray["dogs"]["youngest_dog"]}<br />"    ?>
 
     <?php $assoc["first_name"] = "Larry"; ?>
     <?php echo $assoc["first_name"] . " " . $assoc["last_name"]; ?><br />
-
+    
     <?php // echo $assoc[0]; ?><br />
-
+    <!-- implicit that index increment from 0 and up -->
     <?php $numbers = array(4,8,15,16,23,42); ?>
+    <!-- allows you to explicity set which index each value gets -->
     <?php $numbers = array(0 => 4, 1 => 8, 2 => 15, 3 => 16, 4 => 23, 5 => 42); ?>
     <?php echo $numbers[0]; ?>
     
