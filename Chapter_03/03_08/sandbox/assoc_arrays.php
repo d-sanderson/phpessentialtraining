@@ -5,11 +5,19 @@
   <head>
     <title>Associative Arrays</title>
   </head>
+  
   <body>
-    
+    <!-- An associative array is an object-indexed collection of objects indexed by a label instead of a number -->
+    <!-- the label is the key the content of what is inside is the value these make up key-value pairs-->
+    <!-- When order matters use an ARRAY when order is not important and you want the convenience of a label to refer to use and associative array  -->
     <?php $assoc = array("first_name" => "Kevin", "last_name" => "Skoglund"); ?>
     <?php echo $assoc["first_name"]; ?><br />
     <?php echo $assoc["first_name"] . " " . $assoc["last_name"]; ?><br />
+
+    <?php $myAssocArray = array("first_name" => "David", "last_name" => "S.", "dogs" => array("oldest_dog" =>"Patch", "youngest_dog" => "Comet")); ?>
+    <?php echo "<br/>
+    {$myAssocArray["dogs"]["oldest_dog"]}
+    <br/>"; ?> 
 
     <?php $assoc["first_name"] = "Larry"; ?>
     <?php echo $assoc["first_name"] . " " . $assoc["last_name"]; ?><br />

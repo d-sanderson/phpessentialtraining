@@ -7,7 +7,8 @@
   </head>
   <body>
 
-   <!-- The POWER OF ARRAYS is that a set of info can be accessed through one variable i.e a set of emails -->
+   <!-- The POWER OF ARRAYS is that a set of info can be accessed through one single variable i.e a set of emails would be stored in and userEmail array -->
+    <!-- Arrays are good for keeping ordered lists -->
     <?php
     
     // an array is an ordered collection of data types or objects
@@ -44,6 +45,7 @@
     
     <?php 
       //PHP 5.4 added the short array syntax.
+      // Use the long form array( ) if you want to be backwords compatible
       $array = [1,2,3];
     ?>
     
