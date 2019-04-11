@@ -7,6 +7,9 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo 'hello world' ?>
+    <!-- Outputting Dynamic PHP -->
+    <!-- Always include semicolons at the end of each line of php -->
+    <?php echo 'hello' . " " . 'world'; ?><br />
+    <?php echo 2 + 3; ?>
 </body>
 </html>
