@@ -12,36 +12,23 @@
 
 
 //these are different variables
-  $item; 
-  $Item;
+  $item = 'item 1'; 
+  $Item = 'capitalized item1';
 
 //camelCase
-  $myVar; 
+  $myVar = 'my variable'; 
 
 //kebob (not recommended bc the hyphen looks like a minus sinn)
-  $kebab-variable;
+  // $kebab-variable = 'dont use me';
 
 //one underscore (used in PHP stay away in general use.)
-  $_phpvar; 
+  $_phpvar = 'string'; 
 
 //Double underscores (hard to tell how many underscores were used or their significance)
-  $__bookPage;  
-  
-
+  $__bookPage = '100';  
   
   $var1 = 10;
-  echo $var1;
-  
-  echo "<br />";
-  
-  $var1 = 100;
-  echo $var1;
-  
-  echo "<br />";
-  
-  $var2 = "Hello world";
-  echo $var2;
-  
+
   ?>
   </body>
 </html>

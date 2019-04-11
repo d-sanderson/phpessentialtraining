@@ -7,30 +7,33 @@
   </head>
   <body>
   <?php
+ $first = "The quick brown fox";
+ $second = " jumped over the lazy dog.";
+ 
+ //another way to do concatenation
+ $sentence = $first;
+ $sentence .= $second;
 
-  $first = "The quick brown fox";
-  $second = " jumped over the lazy dog.";
-  
-  $third = $first;
-  $third .= $second;
-  echo $third;
-
-  ?>
-  <br />
-  Lowercase: <?php echo strtolower($third); ?><br />
-  Uppercase: <?php echo strtoupper($third); ?><br />
-  Uppercase first: <?php echo ucfirst($third); ?><br />
-  Uppercase words: <?php echo ucwords($third); ?><br />
-  <br />
-  Length: <?php echo strlen($third); ?><br />
-  Trim: <?php echo "A" . trim(" B C D ") . "E"; ?><br />
-  Find: <?php echo strstr($third, "brown"); ?><br />
-  Replace by string: <?php echo str_replace("quick", "super-fast", $third); ?><br />
-  <br />
-  Repeat: <?php echo str_repeat($third, 2); ?><br />
-  Make substring: <?php echo substr($third, 5, 10); ?><br />
-  Find position: <?php echo strpos($third, "brown"); ?><br />
-  Find character: <?php echo strchr($third, "z"); ?><br />
-  
-  </body>
+ echo $sentence; 
+ ?> 
+ <br/>
+ <!-- Build in PHP functions for manipulating strings strtolower, strtoupper, ucfirst, and ucwords -->
+ Lowercase: <?php echo strtolower($sentence); ?> <br/>
+ Uppercase: <?php echo strtoupper($sentence); ?> <br/>
+ Uppercase first: <?php echo ucfirst($sentence); ?> <br/>
+ ALL CAPS: <?php echo ucwords($sentence); ?> <br />
+ <br/>
+ <!-- returns integer of string length including spaces -->
+ Length: <?php echo strlen($sentence);?> <br />
+ <!-- trims white space from argument  -->
+ Trim: <?php echo "A" . trim(" B C D ") . "E"; ?> <br/>
+ <!-- finds the word and everything else following the string -->
+ Find: <?php echo strstr($sentence, "brown"); ?> <br />
+ Replace: <?php echo str_replace("quick", "speedy", ($sentence)); ?> <br />
+ <br />
+ Repeat: <?php echo str_repeat($sentence, 5); ?> <br />
+ Make substring: <?php echo substr($sentence, 5, 10); ?> <br />
+ Find position: <?php echo strpos($sentence, "brown"); ?> <br />
+ Find Character: <?php echo strchr($sentence, "z") ?> <br />
+ </body>
 </html>

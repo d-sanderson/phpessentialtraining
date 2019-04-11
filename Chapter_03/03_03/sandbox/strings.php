@@ -19,8 +19,11 @@
   <br />
   <?php
   
+  //use double quotes
   echo "$phrase Again<br />";
+  //in place substitution doesn't work with single quotes in PHP
   echo '$phrase Again<br />';
+  //best option for in place substitution if you dont want a space i.e $phaseAgain doesnt work
   echo "{$phrase}Again<br />";
   
   ?>
