@@ -26,6 +26,7 @@
     <?php // empty: returns a boolean for whether a variable is empty. In PHP, empty can be any of these: "", null, 0, 0.0, "0", false, array() ?>
     
     <?php $var3 = "0"; ?>
+    <!-- empty is a leading cause of bugs in PHP code! -->
     var1 empty? <?php echo empty($var1); ?><br />
     var2 empty? <?php echo empty($var2); ?><br />
     var3 empty? <?php echo empty($var3); ?><br />

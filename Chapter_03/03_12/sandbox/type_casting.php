@@ -7,12 +7,22 @@
   </head>
   <body>
     
-    Type Juggling<br />
-    <?php $count = "2 cats"; ?>
-    Type: <?php echo gettype($count); ?><br />
+    <h1>Type Juggling</h1>
     
+    <br />
+    <!-- Sloppy programming -->
+    <?php $count = "2 cats"; ?>
+    <!-- gettype is better than is_int is_bool etc -->
+    Type: <?php echo gettype($count); ?><br />
+
     <?php $count += 3; ?>
     Type: <?php echo gettype($count); ?><br />
+
+
+    <?php $array = [1];?>
+    Type: <?php echo gettype($array); ?> <br />
+    
+
 
     <?php $cats = "I have " . $count . " cats."; ?>
     Cats: <?php echo gettype($cats); ?><br />
@@ -29,7 +39,9 @@
     
     <?php $test1 = 3; ?>
     <?php $test2 = 3; ?>
+    <!-- Explicit conversion rewrites variable $test1 to a string-->
     <?php settype($test1, "string"); ?>
+    <!-- Implicit conversion doesnt change the value of the original variable-->
     <?php (string) $test2; ?>
     test1: <?php echo gettype($test1); ?><br />
     test2: <?php echo gettype($test2); ?><br />
