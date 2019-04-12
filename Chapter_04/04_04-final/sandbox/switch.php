@@ -7,7 +7,7 @@
   </head>
   <body>
     <?php
-      $a = 2;
+      $a = 3;
       
       switch ($a) {
         case 0:
@@ -26,45 +26,68 @@
           echo "a is not 0, 1, 2, or 3<br />";
           break;
       }
-    
+		
     ?>
-    
+
+    <?php 
+    //Method of Contact
+    $contact = "";
+    switch ($contact) {
+      case "email":
+          echo "You prefer to be contacted by email";
+          break;
+      case "phone":
+          echo "You prefer to be contacted by phone";
+          break;
+      case "text":
+          echo "You prefer to be contacted by text";
+          break;
+      default: 
+          echo "You don't prefer to be contacted.";
+    }
+    ?>
+    <br />
     <?php
+		
     // ChineseZodiac
     // whitespace doesn't matter
     // colons, semicolons and breaks do
-    $year = 2013;
+		$year = 2013;
+		echo (($year - 4) % 12) . "<br>";
     switch (($year - 4) % 12) {
-      case  0: $zodiac = 'Rat';     break;
+      case  0: $zodiac = 'Rat';      break;
       case  1: $zodiac = 'Ox';       break;
-      case  2: $zodiac = 'Tiger';   break;
+      case  2: $zodiac = 'Tiger';    break;
       case  3: $zodiac = 'Rabbit';   break;
       case  4: $zodiac = 'Dragon';   break;
-      case  5: $zodiac = 'Snake';   break;
-      case  6: $zodiac = 'Horse';   break;
+      case  5: $zodiac = 'Snake';    break;
+      case  6: $zodiac = 'Horse';    break;
       case  7: $zodiac = 'Goat';     break;
-      case  8: $zodiac = 'Monkey';  break;
-      case  9: $zodiac = 'Rooster'; break;
-      case 10: $zodiac = 'Dog';     break;
-      case 11: $zodiac = 'Pig';     break;
+      case  8: $zodiac = 'Monkey';   break;
+      case  9: $zodiac = 'Rooster';  break;
+      case 10: $zodiac = 'Dog';      break;
+      case 11: $zodiac = 'Pig';      break;
     }
     echo "{$year} is the year of the {$zodiac}.<br />";
     ?>
     
     <?php // case with multiple values
 
-      $user_type = 'customer';
+      $user_type = "customer";
       
       switch ($user_type) {
         case 'student':
           echo "Welcome!";
-          break;
+					break;
+					
+				//if you want to have the same statement for various cases 
+				//just stack the cases without breaks.
         case 'press':
         case 'customer':
         case 'admin':
           echo "Hello!";
           break;
-      }
+			}
     ?>
     
   </body>
