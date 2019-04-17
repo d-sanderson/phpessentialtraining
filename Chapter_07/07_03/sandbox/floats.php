@@ -29,6 +29,6 @@
     <?php echo "Is {$integer} numeric? " . is_numeric($integer); ?><br />
     <?php echo "Is {$float} numeric? " . is_numeric($float); ?><br />
     <br />
-
+  
   </body>
 </html>
